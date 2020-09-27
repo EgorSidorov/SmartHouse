@@ -1,9 +1,9 @@
 # Virtual remote control for smart home.
-### Management using the CLI interface. 
-### The service is implemented using a Spring Boot application.
-### Build:
+## Management using the CLI interface. 
+## The service is implemented using a Spring Boot application.
+## Build
 
-## Service:
+### Service
 Add resources file in path: src/test/resources by pattern: <br />
 > spring.jpa.hibernate.ddl-auto = update <br />
 > spring.datasource.driver-class-name=org.h2.Driver <br />
@@ -30,6 +30,7 @@ Add resources file in path: src/main/resources by pattern: <br />
 For spring application build:https://www.baeldung.com/spring-boot-run-maven-vs-executable-jar <br />
 In maven: run mvn spring-boot:run <br />
 
+### CLI 
 For CLI Application run maven goal mvn assembly:single, and run generated jar with first argument of your server address,  <br />
 for example: http://localhost:8080. <br />
 
