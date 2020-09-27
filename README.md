@@ -16,7 +16,6 @@ Add resources file in path: src/test/resources by pattern: <br />
 
 Add resources file in path: src/main/resources by pattern: <br />
 > spring.jpa.hibernate.ddl-auto = create <br />
-> spring.datasource.driver-class-name=org.h2.Driver <br />
 > #for MySQL: org.hibernate.dialect.MySQL5Dialect <br />
 > spring.jpa.database-platform = YOUR_DATABASE_DIALECT <br />
 > spring.jpa.generate-ddl=true <br />
