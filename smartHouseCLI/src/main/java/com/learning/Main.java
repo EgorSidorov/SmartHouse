@@ -12,9 +12,15 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         int exitCode = 0;
+		if(args.length == 1)
+            initRetrofit( args[0]);
+        else{
+            System.out.println("Your should define address server in format like http://localhost:8080");
+            System.exit(0);
+        }
+
         System.out.println("Enter command:");
         Scanner scanner = new Scanner(System.in);
-        initRetrofit( "http://localhost:8080");
         String[] inputArgs = getInputArgs(scanner);
         while(inputArgs.length != 1 || !inputArgs[0].equals("exit")){
             exitCode = new CommandLine(new MainCommand()).execute(inputArgs);
